@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+body{
+    text-align: center;
+}
+.calendar{
+    width: 50%;
+    background-color: rgba(222, 222, 224, 0.904);
+    margin: auto;
+}
+.calendar__info,.calendar__week,.calendar__date{
+    display: flex;
+    justify-content: space-around;
+}
+.calendar__week,.calendar__date{
+    /**display: grid;
+    grid-template-columns: repeat(7,1fr);*/
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.calendar__prev,.calendar__next{
+cursor: pointer;
+}
+
+.calendar__item {
+    text-align: center;
+    width: 14%;
+    padding: 1% 0 ;
+}
+.toDay{
+    background-color: rgb(110, 194, 219);
+    color: white;
+    /*margin: auto;*/
+    border-radius: 50%;
+}
+.item__last,.item__text{
+    background-color: rgba(224, 223, 223, 0.938);
+    color: rgb(167, 166, 166);
+}
+
+.modal{
+    width: 100%;
+    height: 500px;
+    position: fixed;
+    border:1px solid rgb(44, 44, 44);
+   
+    border-radius: 1%;
+    color:rgb(82, 80, 80);
+    text-align: center;
+    line-height: 500px;
+    left: 10%;
+    top: 0;
+}
+
+.calendar__item, .toDay{
+    border: 1px solid #4b4b4b;
+}
